@@ -1,0 +1,146 @@
+name: UnityMC
+version: '1.0-Alpha'
+main: org.lulunoel2016.unityMC.UnityMC
+api-version: '1.21'
+prefix: UnityMc
+authors: [ lulunoel2016 ]
+description: Pour un plugin qui rassemble toutes les fonctionnalités de base sous une seule entité.
+website: unitymc.fr
+commands:
+  module:
+    description: "Active, désactive ou recharge un module."
+    usage: "/module <enable|disable|reload> <nomModule>"
+    permission: "unitymc.module"
+  god:
+    description: "Active le mode God pour soi-même ou pour un autre joueur."
+    usage: "/god [joueur]"
+    permission: "unitymc.god.self"
+  ungod:
+    description: "Désactive le mode God pour soi-même ou pour un autre joueur."
+    usage: "/ungod [joueur]"
+    permission: "unitymc.ungod.self"
+  gamemode:
+    description: "Change le mode de jeu du joueur."
+    usage: "/gamemode <creative|survival|spectator|adventure> ou /gamemode <0|1|2|3>"
+    permission: "unitymc.gamemode.self"
+  gm:
+    description: "Change le mode de jeu du joueur."
+    usage: "/gm <creative|survival|spectator|adventure> ou /gm <0|1|2|3>"
+    permission: "unitymc.gamemode.self"
+  gmc:
+    description: "Passe en mode créatif."
+    usage: "/gmc"
+    permission: "unitymc.gamemode.self"
+  gms:
+    description: "Passe en mode survie."
+    usage: "/gms"
+    permission: "unitymc.gamemode.self"
+  gmsp:
+    description: "Passe en mode spectateur."
+    usage: "/gmsp"
+    permission: "unitymc.gamemode.self"
+  gma:
+    description: "Passe en mode aventure."
+    usage: "/gma"
+    permission: "unitymc.gamemode.self"
+  powers:
+    description: "Affiche la liste des pouvoirs disponibles."
+  power:
+    description: "Active un pouvoir mystique."
+  starttreasurehunt:
+    description: "Lance une chasse aux trésors."
+  hint:
+    description: "Affiche un indice pour trouver le trésor."
+  leaderboard:
+    description: "Affiche le classement des chasseurs de trésors."
+  starteclipse:
+    description: "Lance une éclipse manuellement."
+  eclipsetime:
+    description: "Affiche le temps restant avant la prochaine éclipse."
+  createportal:
+    description: "Crée un portail dimensionnel."
+  listportals:
+    description: "Affiche tous les portails disponibles."
+  removeportal:
+    description: "Supprime un portail existant."
+  cast:
+    description: "Lance un sort."
+  spellbook:
+    description: "Affiche le livre des sorts disponibles."
+  placetotem:
+    description: "Place un totem sacré."
+  removetotem:
+    description: "Supprime le totem le plus proche."
+  totemlist:
+    description: "Affiche la liste des totems actifs."
+
+permissions:
+  unitymc.god.self:
+    description: "Permet d'activer le mode God pour soi-même."
+    default: op
+  unitymc.god.others:
+    description: "Permet d'activer le mode God pour les autres joueurs."
+    default: op
+  unitymc.ungod.self:
+    description: "Permet de désactiver le mode God pour soi-même."
+    default: op
+  unitymc.ungod.others:
+    description: "Permet de désactiver le mode God pour les autres joueurs."
+    default: op
+  unitymc.gamemode.self:
+    description: "Permet de changer son propre mode de jeu."
+    default: op
+  unitymc.gamemode.others:
+    description: "Permet de changer le mode de jeu d'autres joueurs."
+    default: op
+  unitymc.power.levitation:
+    description: "Permet d'utiliser le pouvoir de lévitation."
+    default: op
+  unitymc.power.invisibility:
+    description: "Permet d'utiliser le pouvoir d'invisibilité."
+    default: op
+  unitymc.power.speed:
+    description: "Permet d'utiliser le pouvoir de vitesse supersonique."
+    default: op
+  unitymc.power.shield:
+    description: "Permet d'utiliser le bouclier de régénération."
+    default: op
+  unitymc.power.firepunch:
+    description: "Permet d'utiliser les poings enflammés."
+    default: op
+  unitymc.treasurehunt.start:
+    description: "Permet de lancer une chasse aux trésors."
+    default: op
+  unitymc.treasurehunt.hint:
+    description: "Permet de demander un indice pour le trésor."
+    default: true
+  unitymc.eclipse.start:
+    description: "Permet de lancer une éclipse manuellement."
+    default: op
+  unitymc.eclipse.info:
+    description: "Permet de vérifier le temps restant avant la prochaine éclipse."
+    default: true
+  unitymc.portal.create:
+    description: "Permet de créer un portail."
+    default: op
+  unitymc.portal.use:
+    description: "Permet d'utiliser un portail."
+    default: true
+  unitymc.portal.remove:
+    description: "Permet de supprimer un portail."
+    default: op
+  unitymc.spell.cast:
+    description: "Permet de lancer des sorts."
+    default: true
+  unitymc.spell.list:
+    description: "Permet de voir la liste des sorts."
+    default: true
+  unitymc.totem.place:
+    description: "Permet de placer un totem."
+    default: op
+  unitymc.totem.remove:
+    description: "Permet de supprimer un totem."
+    default: op
+  unitymc.totem.list:
+    description: "Permet de voir la liste des totems."
+    default: true
